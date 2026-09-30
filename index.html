@@ -3,39 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EFP MASANGANZIRA</title>
+<title>EFP MASANGANZIRA - Ecole de la Fondation des Patriotes</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif}
-.navbar{background:#0b5d34;color:white;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
-.navbar a{color:white;text-decoration:none;margin-left:15px;font-weight:bold;font-size:13px}
-.hero{height:90vh;background:linear-gradient(to right, rgba(11,93,52,0.9), rgba(180,30,30,0.8)), url('https://images.unsplash.com/photo-1588072432836-e10032774350');background-size:cover;background-position:center;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
-.hero h1{font-size:26px;margin:0;letter-spacing:1px}
-.hero h2{font-size:34px;color:#ffeb3b;margin:10px 0}
-.hero p{letter-spacing:4px;margin:10px 0 25px 0}
-.btn{border:2px solid white;background:#c42020;color:white;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
-.section{padding:60px 20px;text-align:center}
-.section h2{color:#0b5d34}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+nav{background:#0a5c36;color:white;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:999}
+nav a{color:white;text-decoration:none;margin-left:15px;font-weight:bold;font-size:13px}
+.hero{min-height:90vh;background:linear-gradient(135deg, rgba(10,92,54,0.95), rgba(180,30,30,0.85)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');background-size:cover;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px}
+.hero h1{font-size:28px} .hero h2{font-size:34px;color:#ffeb3b;margin:10px 0} .hero p{letter-spacing:4px;margin-bottom:25px}
+.btn{background:#c41e1e;color:white;padding:15px 30px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid white;display:inline-block}
+.section{padding:70px 20px;max-width:1100px;margin:auto}
+.section h2{color:#0a5c36;text-align:center;margin-bottom:30px;font-size:28px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);border-top:5px solid #0a5c36}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.footer{background:#0a5c36;color:white;text-align:center;padding:30px;margin-top:40px}
 </style>
 </head>
 <body>
-<div class="navbar">
-<div><b>BI E.F.P MASANGANZIRA</b></div>
+<nav>
+<div><b>E.F.P MASANGANZIRA</b></div>
 <div>
 <a href="#accueil">Accueil</a>
-<a href="#apropos">Notre Vision</a>
+<a href="#vision">Notre Vision</a>
+<a href="#histoire">Histoire</a>
 <a href="#sections">Sections</a>
+<a href="#photos">Photos</a>
 <a href="#contact">Inscription</a>
 </div>
-</div>
-<div class="hero">
+</nav>
+
+<div class="hero" id="accueil">
 <h1>ECOLE DE LA FONDATION DES PATRIOTES</h1>
 <h2>E.F.P - MASANGANZIRA</h2>
 <p>Discipline - Travail - Patriotisme</p>
 <a href="#contact" class="btn">INSCRIRE MON ENFANT MAINTENANT</a>
 </div>
-<div class="section">
-<h2>POURQUOI CHOISIR E.F.P ?</h2>
-<p>Nous offrons une éducation de qualité basée sur la discipline et le patriotisme.</p>
+
+<div class="section" id="vision">
+<h2>Notre Vision</h2>
+<div class="grid">
+<div class="card"><h3>🎯 Mission</h3><p>Former des enfants disciplinés, travailleurs et patriotes pour bâtir le Burundi de demain.</p></div>
+<div class="card"><h3>👁️ Vision</h3><p>Devenir l'école de référence à Bujumbura pour l'excellence académique et morale.</p></div>
+<div class="card"><h3>💎 Valeurs</h3><p>Discipline, Travail, Patriotisme, Respect et Excellence.</p></div>
 </div>
+</div>
+
+<div class="section" id="histoire" style="background:#f9f9f9">
+<h2>Histoire de l'École</h2>
+<p style="text-align:center;max-width:800px;margin:auto;line-height:1.8">Ici tu mettras l'histoire de l'école. Exemple : L'E.F.P Masanganzira a été fondée en ... par la Fondation des Patriotes pour offrir une éducation de qualité aux enfants de Masanganzira... (ENVOIE-MOI TON TEXTE ET JE LE METS ICI)</p>
+</div>
+
+<div class="section" id="sections">
+<h2>Nos Sections</h2>
+<div class="grid">
+<div class="card"><h3>Maternelle</h3><p>Accueil dès 3 ans, éveil, jeux éducatifs.</p></div>
+<div class="card"><h3>Primaire</h3><p>De la 1ère à la 6ème année fondamentale.</p></div>
+<div class="card"><h3>Langues</h3><p>Kirundi, Français, Anglais et Swahili.</p></div>
+</div>
+</div>
+
+<div class="section" id="photos" style="background:#f9f9f9">
+<h2>Photos des Locaux</h2>
+<p style="text-align:center;margin-bottom:20px">Envoie-moi tes photos et je les remplacerai ici</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+<img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6">
+<img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1">
+</div>
+</div>
+
+<div class="section" id="contact">
+<h2>Adresse & Inscription</h2>
+<div class="grid">
+<div class="card"><h3>📍 Adresse</h3><p>Quartier Masanganzira<br>Bujumbura, Burundi<br>(ENVOIE TON ADRESSE EXACTE)</p></div>
+<div class="card"><h3>📞 Contact</h3><p>Tel: +257 ...<br>WhatsApp: +257 ...<br>(ENVOIE TON NUMÉRO)</p></div>
+<div class="card"><h3>📝 Inscription</h3><p>Inscriptions ouvertes pour 2025-2026.<br><a href="https://wa.me/25700000000" style="color:#0a5c36;font-weight:bold">Clique ici pour WhatsApp</a></p></div>
+</div>
+</div>
+
+<div class="footer">
+<p>© 2026 E.F.P Masanganzira - Bujumbura | Discipline - Travail - Patriotisme</p>
+</div>
+
 </body>
 </html>
